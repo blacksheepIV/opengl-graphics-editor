@@ -1,0 +1,20 @@
+﻿Build started 12/10/2012 8:00:33 PM.
+     1>Project "c:\Users\nsatvik\documents\visual studio 2010\Projects\GraphicsEditor\GraphicsEditor\GraphicsEditor.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\GraphicsEditor.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+       Manifest:
+         All outputs are up-to-date.
+       FinalizeBuildStatus:
+         Deleting file "Debug\GraphicsEditor.unsuccessfulbuild".
+         Touching "Debug\GraphicsEditor.lastbuildstate".
+     1>Done Building Project "c:\Users\nsatvik\documents\visual studio 2010\Projects\GraphicsEditor\GraphicsEditor\GraphicsEditor.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.06
