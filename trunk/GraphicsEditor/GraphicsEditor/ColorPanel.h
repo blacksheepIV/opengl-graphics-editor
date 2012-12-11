@@ -15,12 +15,20 @@ private:
 public:
 	ColorPanel(float, float , float , float);
 	void drawPanel();
+	bool isClickInside(int, int);
 
 };
 ColorPanel::ColorPanel(float x1, float y1, float x2, float y2)
 {
 	bottom_left = new Coordinates(x1,y1,0);
 	top_right = new Coordinates(x2,y2,0);
+}
+bool ColorPanel::isClickInside(int x, int y)
+{
+	if((x>=bottom_left->get(X_AXIS))&&(x<=top_right->get(X_AXIS)))
+		return (y>=bottom_left->get(Y_AXIS))&&(x<=top_right->get(Y_AXIS));
+	else
+		return false;
 }
 void ColorPanel::drawPanel()
 {

@@ -11,8 +11,15 @@ private:
 public:
 	DrawingToolBar(float, float , float , float);
 	void drawToolBar();
+	bool isClickInside(int , int);
 };
-
+bool DrawingToolBar::isClickInside(int x, int y)
+{
+	if((x>=bottom_left->get(X_AXIS))&&(x<=top_right->get(X_AXIS)))
+		return (y>=bottom_left->get(Y_AXIS))&&(x<=top_right->get(Y_AXIS));
+	else
+		return false;
+}
 DrawingToolBar::DrawingToolBar(float x1, float y1, float x2, float y2)
 {
 	bottom_left = new Coordinates(x1,y1,0);

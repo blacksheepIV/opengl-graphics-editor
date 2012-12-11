@@ -7,6 +7,7 @@ using namespace std;
 DrawingBoard drawingBoard;
 void display(void);
 void myinit(void);
+void handleMouseEvent(int,int,int,int);
 int main(int argc, char **argv)
 {
 	glutInit(&argc, argv);
@@ -15,6 +16,7 @@ int main(int argc, char **argv)
 	glutInitWindowPosition(10,10);
 	glutCreateWindow("Jinkchak Paint Package");
 	glutDisplayFunc(display);
+	glutMouseFunc(handleMouseEvent);
 	myinit();
 	glutMainLoop();
 }
@@ -26,6 +28,11 @@ void myinit(void)
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	gluOrtho2D(0,499,0,499);
+}
+void handleMouseEvent(int button, int state, int x, int y)
+{
+	drawingBoard.handleMouseClick(button, state, x, y);
+	cout<<"Mouse Click ("<<x<<","<<y<<")"<<endl;
 }
 void display(void)
 {

@@ -22,6 +22,8 @@ private:
 public:
 	DrawingBoard();
 	void initBoard();
+	void handleMouseClick(int, int, int, int);
+	~DrawingBoard();
 	
 };
 DrawingBoard::DrawingBoard()
@@ -31,12 +33,37 @@ DrawingBoard::DrawingBoard()
 	menu_bar = new MenuBar(MENUBAR_LEFT, MENUBAR_BOTTOM, MENUBAR_RIGHT, MENUBAR_TOP);
 	drawingToolBar = new DrawingToolBar( TOOLBAR_LEFT, TOOLBAR_BOTTOM, TOOLBAR_RIGHT, TOOLBAR_TOP);
 }
-
+void DrawingBoard::handleMouseClick(int button, int state, int x, int y)
+{
+	if(button==GLUT_LEFT_BUTTON && state==GLUT_DOWN)
+	{
+		if(canvas_board->isClickInside(x,y))
+		{
+			cout<<"Mouse Click ("<<x<<","<<y<<") - Inside CanvasBoard"<<endl;
+		}
+		if(color_panel->isClickInside(x,y))
+		{
+			cout<<"Mouse Click ("<<x<<","<<y<<") - Inside Color Panel"<<endl;
+		}
+		if(drawingToolBar->isClickInside(x,y))
+		{
+			cout<<"Mouse Click ("<<x<<","<<y<<") - Inside Drawing Toolbar"<<endl;
+		}
+	}
+}
 void DrawingBoard::initBoard()
 {
 	canvas_board->drawBoard();
 	color_panel->drawPanel();
 	menu_bar->addMenuBar();
 	drawingToolBar->drawToolBar();
+}
+
+DrawingBoard::~DrawingBoard()
+{
+	delete canvas_board;
+	delete color_panel;
+	delete menu_bar;
+	delete drawingToolBar;
 }
 #endif

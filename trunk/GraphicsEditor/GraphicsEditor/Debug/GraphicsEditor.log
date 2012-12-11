@@ -1,35 +1,35 @@
-﻿Build started 12/11/2012 1:26:31 AM.
+﻿Build started 12/11/2012 7:56:01 AM.
      1>Project "C:\Users\nsatvik\My Projects\CG Mini Project\GraphicsEditor\GraphicsEditor\GraphicsEditor.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\GraphicsEditor.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W4 /WX- /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt application_main.cpp
          application_main.cpp
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(70): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(74): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
      1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(78): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(84): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(84): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(88): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(88): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(88): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(82): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(86): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
      1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(92): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
      1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(92): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(92): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(98): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(98): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(102): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(102): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(96): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(96): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(96): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(100): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(100): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(100): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
      1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(106): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
      1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(106): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(106): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(116): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(116): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(116): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\application_main.cpp(23): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\application_main.cpp(23): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\application_main.cpp(23): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
-     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\application_main.cpp(23): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(110): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(110): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(114): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(114): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(114): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(124): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(124): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\colorpanel.h(124): warning C4305: 'argument' : truncation from 'double' to 'GLfloat'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\application_main.cpp(25): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\application_main.cpp(25): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\application_main.cpp(25): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
+     1>c:\users\nsatvik\my projects\cg mini project\graphicseditor\graphicseditor\application_main.cpp(25): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
      1>c:\program files (x86)\microsoft sdks\windows\v7.0a\include\gl\freeglut_std.h(610): warning C4505: 'glutCreateMenu_ATEXIT_HACK' : unreferenced local function has been removed
        ManifestResourceCompile:
          All outputs are up-to-date.
@@ -49,4 +49,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.00
+Time Elapsed 00:00:01.13
