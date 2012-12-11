@@ -13,6 +13,7 @@ private:
 public:
 	Canvas(float, float , float , float);
 	void drawBoard();
+	bool isClickInside(int , int);
 };
 Canvas::Canvas(float x1, float y1, float x2, float y2)
 {
@@ -21,6 +22,13 @@ Canvas::Canvas(float x1, float y1, float x2, float y2)
 
 	top_right.set(X_AXIS, x2);
 	top_right.set(Y_AXIS, y2);
+}
+bool Canvas::isClickInside(int x, int y)
+{
+	if((x>=bottom_left.get(X_AXIS))&&(x<=top_right.get(X_AXIS)))
+		return (y>=bottom_left.get(Y_AXIS))&&(x<=top_right.get(Y_AXIS));
+	else
+		return false;
 }
 void Canvas::drawBoard()
 {
