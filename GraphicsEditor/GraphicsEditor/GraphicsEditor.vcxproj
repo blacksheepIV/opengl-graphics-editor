@@ -86,6 +86,7 @@
     <ClInclude Include="Canvas.h" />
     <ClInclude Include="ColorPanel.h" />
     <ClInclude Include="Constants.h" />
+    <ClInclude Include="Coordinates.h" />
     <ClInclude Include="DrawingBoard.h" />
     <ClInclude Include="DrawingToolBar.h" />
     <ClInclude Include="MenuBar.h" />

@@ -1,8 +1,10 @@
 #include "Constants.h"
+#include "DrawingBoard.h"
 #include<gl/glut.h>
 #include<iostream>
 using namespace std;
 
+DrawingBoard drawingBoard;
 void display(void);
 void myinit(void);
 int main(int argc, char **argv)
@@ -18,8 +20,8 @@ int main(int argc, char **argv)
 }
 void myinit(void)
 {
-	glClearColor(1,1,1,1);
-	glColor3f(0,0,0);
+	glClearColor(0.8784,0.8784,0.8784,0.8784);
+	glColor3f(1,1,1);
 	glPointSize(1.0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -29,6 +31,8 @@ void display(void)
 {
 
 	glClear(GL_COLOR_BUFFER_BIT);
+	glColor3f(0,0,0);
+	drawingBoard.initBoard();
 	glBegin(GL_LINES);
 	glVertex2d(10,10);
 	glVertex2d(30,30);
