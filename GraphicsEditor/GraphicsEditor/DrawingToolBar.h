@@ -4,6 +4,7 @@
 #include "Coordinates.h"
 #include "Constants.h"
 #include "Tool.h"
+#include "Special_Tools.h"
 #include<gl/glut.h>
 
 
@@ -20,7 +21,8 @@ private:
 public:
 	DrawingToolBar(float, float , float , float);
 	void drawToolBar();
-
+	void IncreasePointSize();
+	void DecreasePointSize();
 	bool isClickInside(int , int);
 	bool isClickInsideGrid(int x, int y);
 	void selectClickedToolFromGrid(int x, int y);
@@ -55,14 +57,46 @@ void DrawingToolBar::initTools()
 	tools[0][2] = new Line(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
 	begin_x += TOOL_BORDER_WIDTH+GAP;
 
+	tools[0][3] = new WireCube(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
+	begin_x += TOOL_BORDER_WIDTH+GAP;
+
+	tools[0][4] = new WireCone(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
+	begin_x += TOOL_BORDER_WIDTH+GAP;
+
+	tools[0][5] = new WireCone(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
+	begin_x += TOOL_BORDER_WIDTH+GAP;
+
+	tools[0][6] = new FloodFiller(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
+	begin_x += TOOL_BORDER_WIDTH+GAP;
+
+	tools[0][7] = new OutClipper(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
+	begin_x += TOOL_BORDER_WIDTH+GAP;
+
 	begin_x = bottom_left->get(X_AXIS)+GAP;
 	begin_y -= (TOOL_BORDER_HEIGHT+GAP);
 
-	tools[1][0] = new Pencil(begin_x, begin_y-TOOL_BORDER_HEIGHT,begin_x+TOOL_BORDER_WIDTH, begin_y);
+	tools[1][0] = new Rect(begin_x, begin_y-TOOL_BORDER_HEIGHT,begin_x+TOOL_BORDER_WIDTH, begin_y);
 	begin_x += TOOL_BORDER_WIDTH+GAP;
+	
 	tools[1][1] = new Circle(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
 	begin_x += TOOL_BORDER_WIDTH+GAP;
+	
 	tools[1][2] = new Eraser(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
+	begin_x += TOOL_BORDER_WIDTH+GAP;
+
+	tools[1][3] = new Teapot(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
+	begin_x += TOOL_BORDER_WIDTH+GAP;
+
+	tools[1][4] = new Scale(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
+	begin_x += TOOL_BORDER_WIDTH+GAP;
+
+	tools[1][5] = new Rotate(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
+	begin_x += TOOL_BORDER_WIDTH+GAP;
+
+	tools[1][6] = new Translate(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
+	begin_x += TOOL_BORDER_WIDTH+GAP;
+
+	tools[1][7] = new InsideClipper(begin_x,begin_y-TOOL_BORDER_HEIGHT, begin_x+TOOL_BORDER_WIDTH, begin_y);
 	begin_x += TOOL_BORDER_WIDTH+GAP;
 
 
@@ -92,9 +126,23 @@ void DrawingToolBar::drawTools()
 		}
 	}
 	
-	selectedTool->select();		
+	selectedTool->select();	
+	selectedTool->drawPointSizeInfo();
 }
-
+void DrawingToolBar::IncreasePointSize()
+{
+	if(selectedTool)
+	{
+		selectedTool->IncreasePointSize();
+	}
+}
+void DrawingToolBar::DecreasePointSize()
+{
+	if(selectedTool)
+	{
+		selectedTool->DecreasePointSize();
+	}
+}
 
 bool DrawingToolBar::isClickInsideGrid(int x, int y)
 {
