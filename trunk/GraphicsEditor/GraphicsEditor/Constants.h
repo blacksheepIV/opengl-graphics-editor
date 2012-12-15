@@ -61,13 +61,16 @@ enum ColorType
 
 #define GAP 4
 #define TOOLBAR_NUM_ROWS 2
-#define TOOLBAR_NUM_COLS 3
-#define TOOL_BORDER_WIDTH 100
+#define TOOLBAR_NUM_COLS 8
+#define TOOL_BORDER_WIDTH 90
 #define TOOL_BORDER_HEIGHT 30
 
 #define COLOR_SQUARE_SIDE 30
 #define COLOR_PANEL_NUM_ROWS 5
 #define COLOR_PANEL_NUM_COLS 3
+
+#define POINT_INFO_X 10
+#define POINT_INFO_Y 20
 
 #define OP_NEW_X 20
 #define OP_OPEN_X 60
