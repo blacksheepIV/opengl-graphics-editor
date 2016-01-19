@@ -1,0 +1,1 @@
+This is a demo project intended to implement a MS Paint clone in OpenGl. This might help students of BE, Department of Computer Science, in their Computer Graphics Course as a mini-project.
